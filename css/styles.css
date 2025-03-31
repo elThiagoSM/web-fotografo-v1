@@ -215,7 +215,7 @@ nav.show {
   }
 
   /* La imagen aparece primero */
-  .about-photos {
+  .about-photo {
     order: -1;
   }
 

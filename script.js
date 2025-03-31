@@ -49,14 +49,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (section === "Portafolio") {
         switchSection(portfolioSection, aboutSection);
+        setTimeout(() => {
+          portfolioSection.scrollIntoView({ behavior: "smooth" });
+        }, 600); // Espera a que la sección aparezca antes de hacer scroll
       } else if (section === "Bio" || section === "Contacto") {
         switchSection(aboutSection, portfolioSection);
 
-        if (section === "Contacto") {
-          setTimeout(() => {
+        setTimeout(() => {
+          if (section === "Contacto") {
             contactSection.scrollIntoView({ behavior: "smooth" });
-          }, 600); // Espera a que termine la animación antes de hacer scroll
-        }
+          } else {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 600);
       }
 
       updateActiveMenu(section);
