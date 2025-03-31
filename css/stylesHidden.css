@@ -6,14 +6,14 @@ nav ul li a.active {
   color: black;
 }
 
-.porfolio,
+.portfolio,
 .about {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
 
-.porfolio.show,
+.portfolio.show,
 .about.show {
   opacity: 1;
   visibility: visible;

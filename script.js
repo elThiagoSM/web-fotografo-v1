@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("menu-btn");
   const closeMenuBtn = document.getElementById("close-menu");
   const menu = document.getElementById("menu");
-  const portfolioSection = document.querySelector(".porfolio");
+  const portfolioSection = document.querySelector(".portfolio");
   const aboutSection = document.querySelector(".about");
   const contactSection = document.querySelector(".contact-section");
   const menuLinks = document.querySelectorAll("nav ul li a");
