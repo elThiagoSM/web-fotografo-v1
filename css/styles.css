@@ -1,0 +1,297 @@
+body {
+  font-family: "Inknut Antiqua", serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Estilos del menú desplegable === */
+nav {
+  position: fixed;
+  top: 0;
+  right: -650px;
+  width: 600px;
+  height: 100vh;
+  background-color: #d93d12;
+  color: white;
+  transition: right 1s ease-in-out;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Botón de cerrar */
+.close-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.opciones-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lista de opciones del menú */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 100px;
+  width: 100%;
+  text-align: left;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 38px;
+  font-weight: 400;
+  display: block;
+  display: block;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+/* Información de contacto */
+.contact-info {
+  margin: auto 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Mostrar menú */
+nav.show {
+  right: 0;
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    max-width: none; /* Elimina el límite en móviles */
+  }
+
+  .close-icon {
+    font-size: 36px;
+  }
+
+  nav ul {
+    margin-top: 100px; /* Ajuste del margen en móviles */
+  }
+
+  nav ul li a {
+    font-size: 38px; /* Ajuste del tamaño del texto */
+  }
+
+  .contact-info {
+    font-size: 14px; /* Más compacto */
+  }
+}
+
+/* === Galería === */
+.gallery {
+  max-width: 1400px;
+  width: 100%;
+  padding: 40px 20px;
+  column-count: 2;
+  column-gap: 100px;
+  box-sizing: border-box; /* SOLUCIÓN: Evita que el padding rompa el diseño */
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+.photo {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.photo p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* Ajustes para pantallas medianas (tabletas y móviles) */
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 1; /* Una sola columna en móviles */
+    column-gap: 20px;
+    padding: 20px; /* Ajuste igual que en About */
+  }
+
+  .photo {
+    margin-bottom: 50px; /* Reduce el espacio entre fotos */
+  }
+}
+
+/* === Bio - About === */
+.about-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 50px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Sección de texto */
+.about-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Estilos para cada sección (Acerca de, Clientes, etc.) */
+.about-section {
+  margin-bottom: 50px; /* Mayor separación entre secciones */
+}
+
+/* Estilos de los títulos */
+.about-section h2 {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* Estilos del contenido */
+.about-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Sección de fotos */
+.about-photo {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  /* La imagen aparece primero */
+  .about-photos {
+    order: -1;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+  }
+}
+
+/* ====== FORMULARIO DE CONTACTO ====== */
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Contenedor de los inputs */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* Alineación de Nombre y Apellido */
+.form-group.row {
+  gap: 20px;
+}
+
+.form-group.row input {
+  flex: 1;
+}
+
+/* Estilo de los inputs y textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black; /* Solo borde inferior */
+  transition: all 0s;
+  outline: none;
+  background: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid black; /* Borde más grueso en hover o focus */
+  outline: none; /* Quitamos el contorno azul de algunos navegadores */
+}
+
+/* Área de texto más grande */
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Botón de enviar */
+.contact-form button {
+  width: auto; /* Se ajusta al contenido */
+  padding: 10px 60px; /* Reducimos el tamaño del botón */
+  font-size: 16px; /* Tamaño de fuente más pequeño */
+  background: black;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact-form button:hover {
+  background: none;
+  border: 2px solid black;
+  color: black;
+}

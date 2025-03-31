@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Fotográfica</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styleHeader.css" />
+    <link rel="stylesheet" href="css/styleFooter.css" />
+    <link rel="stylesheet" href="css/stylesHidden.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <div class="logo"><a href="#">Alejandro Ríos</a></div>
+        <i class="fas fa-bars menu-icon" id="menu-btn"></i>
+      </div>
+    </header>
+
+    <nav id="menu" class="hidden">
+      <i class="fas fa-times close-icon" id="close-menu"></i>
+      <div class="opciones-menu">
+        <ul>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Bio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <p><a href="mailto:contacto@riosfoto.com">contacto@riosfoto.com</a></p>
+        <p><a href="tel:+5215512345678">+52-1-55-1234-5678</a></p>
+        <p>
+          <a href="https://www.instagram.com/riosfoto" target="_blank"
+            >Instagram @riosfoto</a
+          >
+        </p>
+      </div>
+    </nav>
+
+    <div class="porfolio">
+      <main class="gallery">
+        <div class="photo">
+          <img src="assets/imgs/galeria/1.webp" alt="Imagen 1" />
+          <p>Torre Aurora</p>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/galeria/2.webp" alt="Imagen 2" />
+          <p>Centro Financiero Orión</p>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/galeria/3.webp" alt="Imagen 3" />
+          <p>Casa Encina</p>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/galeria/4.webp" alt="Imagen 4" />
+          <p>Pabellón Solaris</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="about">
+      <main class="about-container">
+        <div class="about-info">
+          <div class="about-section">
+            <h2>Acerca de</h2>
+            <p>
+              Soy Alejandro Ríos, fotógrafo especializado en arquitectura y
+              diseño urbano. Capturo la esencia de cada espacio, desde grandes
+              rascacielos hasta residencias minimalistas. Mi enfoque es destacar
+              la luz, la forma y la textura en cada toma.
+            </p>
+          </div>
+
+          <div class="about-section">
+            <h2>Clientes</h2>
+            <p>
+              Estudio Línea, Constructora Altos, Grupo Vertex, ArqDesign,
+              Habitat Proyectos, Studio Forma, UrbanWorks, Inmobiliaria Nexus.
+            </p>
+          </div>
+
+          <div class="about-section">
+            <h2>Directo</h2>
+            <p>contacto@riosfoto.com</p>
+            <p>+52-1-55-1234-5678</p>
+            <p>Instagram @riosfoto</p>
+          </div>
+
+          <div class="about-section contact-section">
+            <h2>Contacto</h2>
+            <p>Representación / Agencia VisualFocus</p>
+            <p>info@visualfocus.com</p>
+          </div>
+
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group row">
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+                <input
+                  type="text"
+                  name="apellido"
+                  placeholder="Apellido"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="mensaje"
+                  placeholder="Escribe tu mensaje..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="about-photo">
+          <img
+            src="assets/imgs/ale-rios/Alejandro-Ríos.webp"
+            alt="Foto de trabajo 1"
+          />
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <a class="left" href="">CONTACTO</a>
+        <span class="center">
+          Política de Privacidad <br />
+          <p>
+            © 2025 por Alejandro Ríos. Desarrollado por
+            <a
+              href="https://elthiagosm.github.io/portafolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="text-decoration: underline"
+              >Soca Studio</a
+            >
+          </p>
+        </span>
+        <a
+          class="right"
+          href="https://www.instagram.com/riosfoto"
+          target="_blank"
+          rel="noopener noreferrer"
+          >INSTAGRAM</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

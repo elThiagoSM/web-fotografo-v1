@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+
+.container-footer {
+  max-width: 1400px;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+}
+
+footer .container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+footer .container-footer .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .container-footer .bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .container-footer .left,
+footer .container-footer .right {
+  font-size: 14px;
+}
+
+footer .container-footer .center {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .container-footer a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+footer .container-footer a:hover {
+  color: #d93d12;
+}
+
+footer .container-footer p {
+  margin: 3px;
+}
+
+@media (max-width: 768px) {
+  footer .container-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  footer .container-footer .top {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer .container-footer .bottom {
+    margin-top: 10px;
+  }
+
+  footer .container-footer .left,
+  footer .container-footer .right {
+    margin: 5px;
+  }
+}
